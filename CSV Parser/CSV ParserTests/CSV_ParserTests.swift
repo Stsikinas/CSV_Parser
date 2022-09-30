@@ -2,7 +2,7 @@
 //  CSV_ParserTests.swift
 //  CSV ParserTests
 //
-//  Created by Epsilon User on 30/9/22.
+//  Created by Stavros Tsikinas  on 30/9/22.
 //
 
 import XCTest
