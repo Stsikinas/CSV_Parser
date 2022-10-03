@@ -20,6 +20,7 @@
 		30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67028E71A35002C35B2 /* PlaceholderView.swift */; };
 		30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */; };
 		30FB614E28EADB700029ECDA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB614D28EADB700029ECDA /* User.swift */; };
+		30FB615028EADC3C0029ECDA /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB614F28EADC3C0029ECDA /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		30A9F67028E71A35002C35B2 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		30FB614D28EADB700029ECDA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		30FB614F28EADC3C0029ECDA /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		30FB614C28EADB590029ECDA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				30FB614F28EADC3C0029ECDA /* UserViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				30FB614E28EADB700029ECDA /* User.swift in Sources */,
 				30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */,
 				30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */,
+				30FB615028EADC3C0029ECDA /* UserViewModel.swift in Sources */,
 				30A95C6E28E710F8006F37EC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
