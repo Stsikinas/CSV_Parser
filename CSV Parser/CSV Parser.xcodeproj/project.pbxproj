@@ -17,6 +17,8 @@
 		30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6928E70C0A006F37EC /* UIColor+Extensions.swift */; };
 		30A95C6E28E710F8006F37EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6D28E710F8006F37EC /* MainViewController.swift */; };
 		30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */; };
+		30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67028E71A35002C35B2 /* PlaceholderView.swift */; };
+		30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		30A95C6928E70C0A006F37EC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		30A95C6D28E710F8006F37EC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		30A9F67028E71A35002C35B2 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 			children = (
 				30A95C6928E70C0A006F37EC /* UIColor+Extensions.swift */,
 				30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */,
+				30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 		30A95C6B28E710DF006F37EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30A9F66F28E719D7002C35B2 /* Misc */,
 				30A95C6C28E710E4006F37EC /* ViewControllers */,
 			);
 			path = Views;
@@ -160,6 +166,14 @@
 				30A95C6D28E710F8006F37EC /* MainViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		30A9F66F28E719D7002C35B2 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				30A9F67028E71A35002C35B2 /* PlaceholderView.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */,
 				3023AA9328E70AC300B3893F /* AppDelegate.swift in Sources */,
 				3023AA9528E70AC300B3893F /* SceneDelegate.swift in Sources */,
+				30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */,
 				30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */,
 				30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */,
 				30A95C6E28E710F8006F37EC /* MainViewController.swift in Sources */,
