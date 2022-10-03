@@ -19,6 +19,7 @@
 		30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */; };
 		30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67028E71A35002C35B2 /* PlaceholderView.swift */; };
 		30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */; };
+		30FB614E28EADB700029ECDA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB614D28EADB700029ECDA /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30A9F67028E71A35002C35B2 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		30FB614D28EADB700029ECDA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +107,12 @@
 		3023AA9128E70AC300B3893F /* CSV Parser */ = {
 			isa = PBXGroup;
 			children = (
-				30A95C6B28E710DF006F37EC /* Views */,
-				30A95C6828E70BF7006F37EC /* Extensions */,
 				30A95C6728E70BB2006F37EC /* Assets */,
-				3023AA9228E70AC300B3893F /* AppDelegate.swift */,
-				3023AA9428E70AC300B3893F /* SceneDelegate.swift */,
-				3023AA9D28E70AC600B3893F /* LaunchScreen.storyboard */,
-				3023AAA028E70AC600B3893F /* Info.plist */,
+				30A95C6828E70BF7006F37EC /* Extensions */,
+				30FB614A28EADB3C0029ECDA /* Misc */,
+				30FB614B28EADB530029ECDA /* Models */,
+				30FB614C28EADB590029ECDA /* ViewModels */,
+				30A95C6B28E710DF006F37EC /* Views */,
 			);
 			path = "CSV Parser";
 			sourceTree = "<group>";
@@ -174,6 +175,32 @@
 				30A9F67028E71A35002C35B2 /* PlaceholderView.swift */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		30FB614A28EADB3C0029ECDA /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				3023AA9228E70AC300B3893F /* AppDelegate.swift */,
+				3023AA9428E70AC300B3893F /* SceneDelegate.swift */,
+				3023AA9D28E70AC600B3893F /* LaunchScreen.storyboard */,
+				3023AAA028E70AC600B3893F /* Info.plist */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		30FB614B28EADB530029ECDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30FB614D28EADB700029ECDA /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30FB614C28EADB590029ECDA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +337,7 @@
 				3023AA9328E70AC300B3893F /* AppDelegate.swift in Sources */,
 				3023AA9528E70AC300B3893F /* SceneDelegate.swift in Sources */,
 				30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */,
+				30FB614E28EADB700029ECDA /* User.swift in Sources */,
 				30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */,
 				30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */,
 				30A95C6E28E710F8006F37EC /* MainViewController.swift in Sources */,
