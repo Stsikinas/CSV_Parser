@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300437EC28EB119A009727F4 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300437EB28EB119A009727F4 /* UserCell.swift */; };
+		300437EE28EB1214009727F4 /* UserCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300437ED28EB1213009727F4 /* UserCell+Extensions.swift */; };
 		3023AA9328E70AC300B3893F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023AA9228E70AC300B3893F /* AppDelegate.swift */; };
 		3023AA9528E70AC300B3893F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023AA9428E70AC300B3893F /* SceneDelegate.swift */; };
 		3023AA9C28E70AC600B3893F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3023AA9B28E70AC600B3893F /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		300437EB28EB119A009727F4 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		300437ED28EB1213009727F4 /* UserCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCell+Extensions.swift"; sourceTree = "<group>"; };
 		3023AA8F28E70AC300B3893F /* CSV Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSV Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3023AA9228E70AC300B3893F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3023AA9428E70AC300B3893F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300437EA28EB1181009727F4 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				300437EB28EB119A009727F4 /* UserCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
 		3023AA8628E70AC300B3893F = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +121,7 @@
 		3023AA9128E70AC300B3893F /* CSV Parser */ = {
 			isa = PBXGroup;
 			children = (
+				3023AAA028E70AC600B3893F /* Info.plist */,
 				30A95C6728E70BB2006F37EC /* Assets */,
 				30A95C6828E70BF7006F37EC /* Extensions */,
 				30FB614A28EADB3C0029ECDA /* Misc */,
@@ -148,8 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				30A95C6928E70C0A006F37EC /* UIColor+Extensions.swift */,
-				30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */,
 				30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */,
+				30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */,
+				300437ED28EB1213009727F4 /* UserCell+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -157,6 +171,7 @@
 		30A95C6B28E710DF006F37EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				300437EA28EB1181009727F4 /* ViewCells */,
 				30A9F66F28E719D7002C35B2 /* Misc */,
 				30A95C6C28E710E4006F37EC /* ViewControllers */,
 			);
@@ -185,7 +200,6 @@
 				3023AA9228E70AC300B3893F /* AppDelegate.swift */,
 				3023AA9428E70AC300B3893F /* SceneDelegate.swift */,
 				3023AA9D28E70AC600B3893F /* LaunchScreen.storyboard */,
-				3023AAA028E70AC600B3893F /* Info.plist */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -338,12 +352,14 @@
 			files = (
 				30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */,
 				3023AA9328E70AC300B3893F /* AppDelegate.swift in Sources */,
+				300437EE28EB1214009727F4 /* UserCell+Extensions.swift in Sources */,
 				3023AA9528E70AC300B3893F /* SceneDelegate.swift in Sources */,
 				30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */,
 				30FB614E28EADB700029ECDA /* User.swift in Sources */,
 				30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */,
 				30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */,
 				30FB615028EADC3C0029ECDA /* UserViewModel.swift in Sources */,
+				300437EC28EB119A009727F4 /* UserCell.swift in Sources */,
 				30A95C6E28E710F8006F37EC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

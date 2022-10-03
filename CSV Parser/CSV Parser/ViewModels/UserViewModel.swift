@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct IssueViewModel {
+struct UserViewModel {
     
     // MARK: - Variables
     var name: String
