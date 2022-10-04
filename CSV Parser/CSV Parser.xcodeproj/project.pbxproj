@@ -16,6 +16,8 @@
 		3023AAAA28E70AC600B3893F /* CSV_ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023AAA928E70AC600B3893F /* CSV_ParserTests.swift */; };
 		3023AAB428E70AC600B3893F /* CSV_ParserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023AAB328E70AC600B3893F /* CSV_ParserUITests.swift */; };
 		3023AAB628E70AC600B3893F /* CSV_ParserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023AAB528E70AC600B3893F /* CSV_ParserUITestsLaunchTests.swift */; };
+		306A42A228EC488600C0EEDD /* FileImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A42A128EC488600C0EEDD /* FileImporter.swift */; };
+		306A42A428EC4D8A00C0EEDD /* FileImporter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A42A328EC4D8A00C0EEDD /* FileImporter+Extensions.swift */; };
 		30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6928E70C0A006F37EC /* UIColor+Extensions.swift */; };
 		30A95C6E28E710F8006F37EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6D28E710F8006F37EC /* MainViewController.swift */; };
 		30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */; };
@@ -59,6 +61,8 @@
 		3023AAAF28E70AC600B3893F /* CSV ParserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CSV ParserUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3023AAB328E70AC600B3893F /* CSV_ParserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV_ParserUITests.swift; sourceTree = "<group>"; };
 		3023AAB528E70AC600B3893F /* CSV_ParserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV_ParserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		306A42A128EC488600C0EEDD /* FileImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImporter.swift; sourceTree = "<group>"; };
+		306A42A328EC4D8A00C0EEDD /* FileImporter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileImporter+Extensions.swift"; sourceTree = "<group>"; };
 		30A95C6928E70C0A006F37EC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		30A95C6D28E710F8006F37EC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				30A95C6828E70BF7006F37EC /* Extensions */,
 				30FB614A28EADB3C0029ECDA /* Misc */,
 				30FB614B28EADB530029ECDA /* Models */,
+				306A42A028EC487200C0EEDD /* Services */,
 				30FB614C28EADB590029ECDA /* ViewModels */,
 				30A95C6B28E710DF006F37EC /* Views */,
 			);
@@ -153,6 +158,14 @@
 				3023AAB528E70AC600B3893F /* CSV_ParserUITestsLaunchTests.swift */,
 			);
 			path = "CSV ParserUITests";
+			sourceTree = "<group>";
+		};
+		306A42A028EC487200C0EEDD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				306A42A128EC488600C0EEDD /* FileImporter.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		30A95C6728E70BB2006F37EC /* Assets */ = {
@@ -215,6 +228,7 @@
 			children = (
 				300437ED28EB1213009727F4 /* UserCell+Extensions.swift */,
 				30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */,
+				306A42A328EC4D8A00C0EEDD /* FileImporter+Extensions.swift */,
 			);
 			path = ProjectExtensions;
 			sourceTree = "<group>";
@@ -380,12 +394,14 @@
 				3023AA9328E70AC300B3893F /* AppDelegate.swift in Sources */,
 				300437EE28EB1214009727F4 /* UserCell+Extensions.swift in Sources */,
 				3023AA9528E70AC300B3893F /* SceneDelegate.swift in Sources */,
+				306A42A428EC4D8A00C0EEDD /* FileImporter+Extensions.swift in Sources */,
 				30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */,
 				30FB614E28EADB700029ECDA /* User.swift in Sources */,
 				30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */,
 				30DE07F928EC2B8E00C1B132 /* UIImageView+Extensions.swift in Sources */,
 				30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */,
 				30E089B928EC26BE0059A5B1 /* MainViewController+Extensions.swift in Sources */,
+				306A42A228EC488600C0EEDD /* FileImporter.swift in Sources */,
 				30FB615028EADC3C0029ECDA /* UserViewModel.swift in Sources */,
 				300437EC28EB119A009727F4 /* UserCell.swift in Sources */,
 				30A95C6E28E710F8006F37EC /* MainViewController.swift in Sources */,
