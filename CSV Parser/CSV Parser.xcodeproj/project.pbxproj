@@ -21,6 +21,8 @@
 		30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */; };
 		30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67028E71A35002C35B2 /* PlaceholderView.swift */; };
 		30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */; };
+		30E089B728EC250D0059A5B1 /* UITableViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E089B628EC250D0059A5B1 /* UITableViewController+Extensions.swift */; };
+		30E089B928EC26BE0059A5B1 /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */; };
 		30FB614E28EADB700029ECDA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB614D28EADB700029ECDA /* User.swift */; };
 		30FB615028EADC3C0029ECDA /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB614F28EADC3C0029ECDA /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30A9F67028E71A35002C35B2 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		30E089B628EC250D0059A5B1 /* UITableViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extensions.swift"; sourceTree = "<group>"; };
+		30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30FB614D28EADB700029ECDA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		30FB614F28EADC3C0029ECDA /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +168,8 @@
 				30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */,
 				30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */,
 				300437ED28EB1213009727F4 /* UserCell+Extensions.swift */,
+				30E089B628EC250D0059A5B1 /* UITableViewController+Extensions.swift */,
+				30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */,
+				30E089B728EC250D0059A5B1 /* UITableViewController+Extensions.swift in Sources */,
 				3023AA9328E70AC300B3893F /* AppDelegate.swift in Sources */,
 				300437EE28EB1214009727F4 /* UserCell+Extensions.swift in Sources */,
 				3023AA9528E70AC300B3893F /* SceneDelegate.swift in Sources */,
@@ -358,6 +365,7 @@
 				30FB614E28EADB700029ECDA /* User.swift in Sources */,
 				30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */,
 				30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */,
+				30E089B928EC26BE0059A5B1 /* MainViewController+Extensions.swift in Sources */,
 				30FB615028EADC3C0029ECDA /* UserViewModel.swift in Sources */,
 				300437EC28EB119A009727F4 /* UserCell.swift in Sources */,
 				30A95C6E28E710F8006F37EC /* MainViewController.swift in Sources */,
