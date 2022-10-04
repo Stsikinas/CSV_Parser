@@ -13,11 +13,13 @@
 		3023AA9528E70AC300B3893F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023AA9428E70AC300B3893F /* SceneDelegate.swift */; };
 		3023AA9C28E70AC600B3893F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3023AA9B28E70AC600B3893F /* Assets.xcassets */; };
 		3023AA9F28E70AC600B3893F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3023AA9D28E70AC600B3893F /* LaunchScreen.storyboard */; };
-		3023AAAA28E70AC600B3893F /* CSV_ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023AAA928E70AC600B3893F /* CSV_ParserTests.swift */; };
 		3023AAB428E70AC600B3893F /* CSV_ParserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023AAB328E70AC600B3893F /* CSV_ParserUITests.swift */; };
 		3023AAB628E70AC600B3893F /* CSV_ParserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023AAB528E70AC600B3893F /* CSV_ParserUITestsLaunchTests.swift */; };
 		306A42A228EC488600C0EEDD /* FileImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A42A128EC488600C0EEDD /* FileImporter.swift */; };
 		306A42A428EC4D8A00C0EEDD /* FileImporter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A42A328EC4D8A00C0EEDD /* FileImporter+Extensions.swift */; };
+		306A42A728EC625000C0EEDD /* TestFileImportProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A42A628EC625000C0EEDD /* TestFileImportProtocol.swift */; };
+		306A42A928EC6A6C00C0EEDD /* users.csv in Resources */ = {isa = PBXBuildFile; fileRef = 306A42A828EC6A6C00C0EEDD /* users.csv */; };
+		306A42AB28EC723B00C0EEDD /* users_big.csv in Resources */ = {isa = PBXBuildFile; fileRef = 306A42AA28EC723B00C0EEDD /* users_big.csv */; };
 		30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6928E70C0A006F37EC /* UIColor+Extensions.swift */; };
 		30A95C6E28E710F8006F37EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6D28E710F8006F37EC /* MainViewController.swift */; };
 		30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */; };
@@ -57,12 +59,14 @@
 		3023AA9E28E70AC600B3893F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3023AAA028E70AC600B3893F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3023AAA528E70AC600B3893F /* CSV ParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CSV ParserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3023AAA928E70AC600B3893F /* CSV_ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV_ParserTests.swift; sourceTree = "<group>"; };
 		3023AAAF28E70AC600B3893F /* CSV ParserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CSV ParserUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3023AAB328E70AC600B3893F /* CSV_ParserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV_ParserUITests.swift; sourceTree = "<group>"; };
 		3023AAB528E70AC600B3893F /* CSV_ParserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV_ParserUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		306A42A128EC488600C0EEDD /* FileImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImporter.swift; sourceTree = "<group>"; };
 		306A42A328EC4D8A00C0EEDD /* FileImporter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileImporter+Extensions.swift"; sourceTree = "<group>"; };
+		306A42A628EC625000C0EEDD /* TestFileImportProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFileImportProtocol.swift; sourceTree = "<group>"; };
+		306A42A828EC6A6C00C0EEDD /* users.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = users.csv; sourceTree = "<group>"; };
+		306A42AA28EC723B00C0EEDD /* users_big.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = users_big.csv; sourceTree = "<group>"; };
 		30A95C6928E70C0A006F37EC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		30A95C6D28E710F8006F37EC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -146,7 +150,7 @@
 		3023AAA828E70AC600B3893F /* CSV ParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				3023AAA928E70AC600B3893F /* CSV_ParserTests.swift */,
+				306A42A528EC623300C0EEDD /* TestFileImporter */,
 			);
 			path = "CSV ParserTests";
 			sourceTree = "<group>";
@@ -168,10 +172,20 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		306A42A528EC623300C0EEDD /* TestFileImporter */ = {
+			isa = PBXGroup;
+			children = (
+				306A42A628EC625000C0EEDD /* TestFileImportProtocol.swift */,
+			);
+			path = TestFileImporter;
+			sourceTree = "<group>";
+		};
 		30A95C6728E70BB2006F37EC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				3023AA9B28E70AC600B3893F /* Assets.xcassets */,
+				306A42A828EC6A6C00C0EEDD /* users.csv */,
+				306A42AA28EC723B00C0EEDD /* users_big.csv */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -363,7 +377,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306A42A928EC6A6C00C0EEDD /* users.csv in Resources */,
 				3023AA9F28E70AC600B3893F /* LaunchScreen.storyboard in Resources */,
+				306A42AB28EC723B00C0EEDD /* users_big.csv in Resources */,
 				3023AA9C28E70AC600B3893F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3023AAAA28E70AC600B3893F /* CSV_ParserTests.swift in Sources */,
+				306A42A728EC625000C0EEDD /* TestFileImportProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

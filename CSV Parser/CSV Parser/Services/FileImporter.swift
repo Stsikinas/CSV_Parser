@@ -35,9 +35,15 @@ struct FileImporter: FileImportProtocol {
     }
     
     func getFiles() throws -> [String] {
-        let files = Bundle.main.paths(forResourcesOfType: fileExtension, inDirectory: nil)
-        if files.count == 0 {
+        let filePaths = Bundle.main.paths(forResourcesOfType: fileExtension, inDirectory: nil)
+        if filePaths.count == 0 {
             throw(FileError.NoFilesFound)
+        }
+        var files = [String]()
+        
+        for filePath in filePaths {
+            let path = URL(fileURLWithPath: filePath)
+            files.append(path.lastPathComponent)
         }
         return files
     }
