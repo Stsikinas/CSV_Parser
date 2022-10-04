@@ -37,6 +37,12 @@ class UserCell: UITableViewCell {
         return label
     }()
     
+    lazy var starImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.set(image: UIImage(systemName: "star.fill"), colored: UIColor.systemYellow)
+        return imageView
+    }()
+    
     var userViewModel: UserViewModel! {
         
         didSet {
@@ -56,8 +62,10 @@ class UserCell: UITableViewCell {
         titleLabel.addAnchors(wAnchor: contentView.widthAnchor, wMulti: 0.6, lAnchor: leftAnchor, leftConstant: 12, tAnchor: contentView.topAnchor, topConstant: 8)
         contentView.addSubview(subtitleLabel)
         subtitleLabel.addAnchors(lAnchor: titleLabel.leftAnchor, tAnchor: titleLabel.bottomAnchor, topConstant: 8, bAnchor: contentView.bottomAnchor, bottomConstant: -4)
+        contentView.addSubview(starImageView)
+        starImageView.addAnchors(cYAnchor: contentView.centerYAnchor, rAnchor: contentView.rightAnchor, rightConstant: -12)
         contentView.addSubview(badgeLabel)
-        badgeLabel.addAnchors(cYAnchor: contentView.centerYAnchor, rAnchor: contentView.rightAnchor, rightConstant: -12)
+        badgeLabel.addAnchors(cYAnchor: contentView.centerYAnchor, rAnchor: starImageView.leftAnchor, rightConstant: -8)
     }
     
     required init?(coder: NSCoder) {

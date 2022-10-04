@@ -17,7 +17,7 @@ class MainViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createNavigation(with: "Clients Information")
+        createNavigation(with: "Client Information")
         setupDefaultTableViewProperties()
         registerCell(with: cellID)
     }
