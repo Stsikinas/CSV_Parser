@@ -18,6 +18,7 @@ class MainViewController: UITableViewController {
         super.viewDidLoad()
         
         createNavigation(with: "Client Information")
+        addBarButtons(right: [UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)])
         setupDefaultTableViewProperties()
         registerCell(with: cellID)
     }

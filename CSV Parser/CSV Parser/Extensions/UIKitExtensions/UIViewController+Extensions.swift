@@ -19,4 +19,9 @@ extension UIViewController {
         
     }
     
+    func addBarButtons(left: [UIBarButtonItem]? = nil, right: [UIBarButtonItem]? = nil) {
+        navigationItem.leftBarButtonItems = left
+        navigationItem.rightBarButtonItems = right
+    }
+    
 }
