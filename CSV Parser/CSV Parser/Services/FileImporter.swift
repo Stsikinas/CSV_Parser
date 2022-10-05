@@ -42,8 +42,7 @@ struct FileImporter: FileImportProtocol {
         var files = [String]()
         
         for filePath in filePaths {
-            let path = URL(fileURLWithPath: filePath)
-            files.append(path.lastPathComponent)
+            files.append(filePath.getLastPath())
         }
         return files
     }
