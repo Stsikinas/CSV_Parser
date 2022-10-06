@@ -13,12 +13,16 @@ class MainViewController: UITableViewController {
     // Public
     // Private
     private let cellID = "UserCell"
+    // Internal
+    internal var files = [String]()
+    internal var filePicker = UIPickerView()
+    internal let fileImporter: GetFilesProtocol = FileImporter(fileExtension: "csv")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         createNavigation(with: "Client Information")
-        addBarButtons(right: [UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)])
+        addBarButtons(right: [importFileButton])
         setupDefaultTableViewProperties()
         registerCell(with: cellID)
     }

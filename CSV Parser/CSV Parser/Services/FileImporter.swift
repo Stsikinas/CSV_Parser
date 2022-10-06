@@ -10,12 +10,14 @@ import Foundation
 
 protocol FileImportProtocol {
     func getFileUrl(from name: String, with type: String) -> URL?
-    func getFiles() throws -> [String]
     func fileExists(for path: String) throws -> Bool
 }
 
+protocol GetFilesProtocol {
+    func getFiles() throws -> [String]
+}
 
-struct FileImporter: FileImportProtocol {
+struct FileImporter: FileImportProtocol, GetFilesProtocol {
     
     // MARK: - Variables
     // Public
