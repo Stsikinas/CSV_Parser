@@ -28,6 +28,8 @@
 		30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */; };
 		30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67028E71A35002C35B2 /* PlaceholderView.swift */; };
 		30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */; };
+		30AB8B7528FEC41600FA9AEB /* UserCSVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB8B7428FEC41600FA9AEB /* UserCSVService.swift */; };
+		30AB8B7728FECBA100FA9AEB /* UserCSVService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB8B7628FECBA100FA9AEB /* UserCSVService+Extensions.swift */; };
 		30DE07F928EC2B8E00C1B132 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE07F828EC2B8E00C1B132 /* UIImageView+Extensions.swift */; };
 		30E089B728EC250D0059A5B1 /* UITableViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E089B628EC250D0059A5B1 /* UITableViewController+Extensions.swift */; };
 		30E089B928EC26BE0059A5B1 /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */; };
@@ -78,6 +80,8 @@
 		30A95C6F28E71172006F37EC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30A9F67028E71A35002C35B2 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		30AB8B7428FEC41600FA9AEB /* UserCSVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCSVService.swift; sourceTree = "<group>"; };
+		30AB8B7628FECBA100FA9AEB /* UserCSVService+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCSVService+Extensions.swift"; sourceTree = "<group>"; };
 		30DE07F828EC2B8E00C1B132 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		30E089B628EC250D0059A5B1 /* UITableViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				306A42A128EC488600C0EEDD /* FileImporter.swift */,
+				30AB8B7428FEC41600FA9AEB /* UserCSVService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				300437ED28EB1213009727F4 /* UserCell+Extensions.swift */,
 				30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */,
 				306A42A328EC4D8A00C0EEDD /* FileImporter+Extensions.swift */,
+				30AB8B7628FECBA100FA9AEB /* UserCSVService+Extensions.swift */,
 			);
 			path = ProjectExtensions;
 			sourceTree = "<group>";
@@ -438,9 +444,11 @@
 				306A42A428EC4D8A00C0EEDD /* FileImporter+Extensions.swift in Sources */,
 				30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */,
 				30FB614E28EADB700029ECDA /* User.swift in Sources */,
+				30AB8B7728FECBA100FA9AEB /* UserCSVService+Extensions.swift in Sources */,
 				30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */,
 				30DE07F928EC2B8E00C1B132 /* UIImageView+Extensions.swift in Sources */,
 				30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */,
+				30AB8B7528FEC41600FA9AEB /* UserCSVService.swift in Sources */,
 				30E089B928EC26BE0059A5B1 /* MainViewController+Extensions.swift in Sources */,
 				3044E63E28ED710B007E733C /* String+Extensions.swift in Sources */,
 				306A42A228EC488600C0EEDD /* FileImporter.swift in Sources */,
