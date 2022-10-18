@@ -20,10 +20,9 @@ extension UserCSVService: CSVParserProtocol {
         return []
     }
     
-    func parse<User>(for file: String, completion: @escaping ([User]) -> ()) throws {
+    func parse<User>(for file: String, completion: @escaping (Result<[User], CSVError>) -> ()) throws {
         
         
-        completion([])
     }
     
     
