@@ -23,6 +23,8 @@ extension CSVError {
             return "Some rows couldn't be parsed, because they are empty"
         case .MismatchRowCount:
             return "Some rows contain multilined values or have mismatch components"
+        case .DefaultError:
+            return "An unexpected error occurred. Please try again"
         }
         
     }

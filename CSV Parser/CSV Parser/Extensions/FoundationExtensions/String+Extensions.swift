@@ -16,4 +16,11 @@ extension String {
         let path = URL(fileURLWithPath: self)
         return path.lastPathComponent
     }
+    
+    var toInt: Int {
+        if let convertedString = Int(self) {
+            return convertedString
+        }
+        return 0
+    }
 }

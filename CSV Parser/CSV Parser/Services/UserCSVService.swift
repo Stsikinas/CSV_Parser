@@ -11,8 +11,14 @@ import Foundation
 protocol CSVParserProtocol {
     func openCSV(file: String) throws -> String
     func getHeaders(row: String) -> [String]
-    func convert(row: String) -> [String]
-    func parse<T>(for file: String, completion: @escaping(Result<[T], CSVError>) -> ()) throws
+    func convert(row: String) throws -> [String]
+    func splitComponents(rawData: String) throws -> [String]
+    func parse(for file: String, completion: @escaping(Result<[User], CSVError>) -> ())
+}
+
+protocol UserConverter {
+    func convert(rowData: [String]) -> User
+    func applyRules(for row: [String]) -> [String]
 }
 
 enum CSVError: Error {
@@ -21,4 +27,5 @@ enum CSVError: Error {
     case NonCompleteFile
     case EmptyRow
     case MismatchRowCount
+    case DefaultError
 }
