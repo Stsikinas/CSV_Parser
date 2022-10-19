@@ -9,6 +9,7 @@ import Foundation
 
 
 protocol CSVParserProtocol {
+    func openCSV(file: String) throws -> String
     func getHeaders(row: String) -> [String]
     func convert(row: String) -> [String]
     func parse<T>(for file: String, completion: @escaping(Result<[T], CSVError>) -> ()) throws
@@ -17,15 +18,7 @@ protocol CSVParserProtocol {
 enum CSVError: Error {
     case FileNotFound
     case StringInitError
-    case NoHeadersFound
+    case NonCompleteFile
     case EmptyRow
     case MismatchRowCount
-}
-
-struct UserCSVService {
-    // MARK: - Variables
-    let parsingThread = DispatchQueue(label: "parseUsers")
-    var headers = [String]()
-    private let separator = ","
-    private let lineSeparator = "\n"
 }

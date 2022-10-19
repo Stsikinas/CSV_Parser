@@ -29,7 +29,10 @@
 		30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67028E71A35002C35B2 /* PlaceholderView.swift */; };
 		30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */; };
 		30AB8B7528FEC41600FA9AEB /* UserCSVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB8B7428FEC41600FA9AEB /* UserCSVService.swift */; };
-		30AB8B7728FECBA100FA9AEB /* UserCSVService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB8B7628FECBA100FA9AEB /* UserCSVService+Extensions.swift */; };
+		30C505D628FFCD55003540D0 /* CSVError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C505D528FFCD55003540D0 /* CSVError+Extensions.swift */; };
+		30C505D828FFD5D1003540D0 /* UsersTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C505D728FFD5D1003540D0 /* UsersTableViewModel.swift */; };
+		30C505DA28FFD679003540D0 /* UsersTableViewModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C505D928FFD679003540D0 /* UsersTableViewModel+Extensions.swift */; };
+		30C505DD28FFDCC9003540D0 /* TestCSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C505DC28FFDCC9003540D0 /* TestCSVParser.swift */; };
 		30DE07F928EC2B8E00C1B132 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE07F828EC2B8E00C1B132 /* UIImageView+Extensions.swift */; };
 		30E089B728EC250D0059A5B1 /* UITableViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E089B628EC250D0059A5B1 /* UITableViewController+Extensions.swift */; };
 		30E089B928EC26BE0059A5B1 /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */; };
@@ -81,7 +84,10 @@
 		30A9F67028E71A35002C35B2 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		30A9F67228E71F99002C35B2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		30AB8B7428FEC41600FA9AEB /* UserCSVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCSVService.swift; sourceTree = "<group>"; };
-		30AB8B7628FECBA100FA9AEB /* UserCSVService+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCSVService+Extensions.swift"; sourceTree = "<group>"; };
+		30C505D528FFCD55003540D0 /* CSVError+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CSVError+Extensions.swift"; sourceTree = "<group>"; };
+		30C505D728FFD5D1003540D0 /* UsersTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewModel.swift; sourceTree = "<group>"; };
+		30C505D928FFD679003540D0 /* UsersTableViewModel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersTableViewModel+Extensions.swift"; sourceTree = "<group>"; };
+		30C505DC28FFDCC9003540D0 /* TestCSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCSVParser.swift; sourceTree = "<group>"; };
 		30DE07F828EC2B8E00C1B132 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		30E089B628EC250D0059A5B1 /* UITableViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 		3023AAA828E70AC600B3893F /* CSV ParserTests */ = {
 			isa = PBXGroup;
 			children = (
+				30C505DB28FFDBC9003540D0 /* TestUsersTableViewModel */,
 				3044E63F28ED7680007E733C /* TestMisc */,
 				306A42A528EC623300C0EEDD /* TestFileImporter */,
 			);
@@ -255,6 +262,14 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
+		30C505DB28FFDBC9003540D0 /* TestUsersTableViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				30C505DC28FFDCC9003540D0 /* TestCSVParser.swift */,
+			);
+			path = TestUsersTableViewModel;
+			sourceTree = "<group>";
+		};
 		30DE07F628EC2B5000C1B132 /* UIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +288,8 @@
 				300437ED28EB1213009727F4 /* UserCell+Extensions.swift */,
 				30E089B828EC26BE0059A5B1 /* MainViewController+Extensions.swift */,
 				306A42A328EC4D8A00C0EEDD /* FileImporter+Extensions.swift */,
-				30AB8B7628FECBA100FA9AEB /* UserCSVService+Extensions.swift */,
+				30C505D528FFCD55003540D0 /* CSVError+Extensions.swift */,
+				30C505D928FFD679003540D0 /* UsersTableViewModel+Extensions.swift */,
 			);
 			path = ProjectExtensions;
 			sourceTree = "<group>";
@@ -300,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				30FB614F28EADC3C0029ECDA /* UserViewModel.swift */,
+				30C505D728FFD5D1003540D0 /* UsersTableViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -438,13 +455,15 @@
 			files = (
 				30A9F67328E71F99002C35B2 /* UIView+Extensions.swift in Sources */,
 				30E089B728EC250D0059A5B1 /* UITableViewController+Extensions.swift in Sources */,
+				30C505D828FFD5D1003540D0 /* UsersTableViewModel.swift in Sources */,
 				3023AA9328E70AC300B3893F /* AppDelegate.swift in Sources */,
 				300437EE28EB1214009727F4 /* UserCell+Extensions.swift in Sources */,
 				3023AA9528E70AC300B3893F /* SceneDelegate.swift in Sources */,
+				30C505D628FFCD55003540D0 /* CSVError+Extensions.swift in Sources */,
 				306A42A428EC4D8A00C0EEDD /* FileImporter+Extensions.swift in Sources */,
+				30C505DA28FFD679003540D0 /* UsersTableViewModel+Extensions.swift in Sources */,
 				30A9F67128E71A35002C35B2 /* PlaceholderView.swift in Sources */,
 				30FB614E28EADB700029ECDA /* User.swift in Sources */,
-				30AB8B7728FECBA100FA9AEB /* UserCSVService+Extensions.swift in Sources */,
 				30A95C7028E71172006F37EC /* UIViewController+Extensions.swift in Sources */,
 				30DE07F928EC2B8E00C1B132 /* UIImageView+Extensions.swift in Sources */,
 				30A95C6A28E70C0A006F37EC /* UIColor+Extensions.swift in Sources */,
@@ -465,6 +484,7 @@
 				306A42A728EC625000C0EEDD /* TestFileImportProtocol.swift in Sources */,
 				3044E64328ED773A007E733C /* MockData.swift in Sources */,
 				3044E64128ED7699007E733C /* TestFileNaming.swift in Sources */,
+				30C505DD28FFDCC9003540D0 /* TestCSVParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
