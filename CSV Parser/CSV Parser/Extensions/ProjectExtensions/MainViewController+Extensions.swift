@@ -33,7 +33,7 @@ extension MainViewController {
     
     private func getPickerValues() -> [String] {
         do {
-            let files = try fileImporter.getFiles()
+            let files = try usersViewModel.fileImporter.getFiles()
             return files
         } catch {
             print("Unable to obtain files.")
@@ -88,8 +88,9 @@ extension MainViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         
         alert.setValue(pickerVC, forKey: "contentViewController")
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        alert.addAction(UIAlertAction(title: "Import", style: .default, handler: { _ in
-            
+        alert.addAction(UIAlertAction(title: "Import", style: .default, handler: { [weak self] _ in
+            let selectedIndex = self?.filePicker.selectedRow(inComponent: 0)
+            self?.usersViewModel.getUsers(from: self?.files[selectedIndex ?? 0] ?? "")
         }))
         
         self.present(alert, animated: true)

@@ -14,6 +14,7 @@ protocol CSVParserProtocol {
     func convert(row: String) throws -> [String]
     func splitComponents(rawData: String) throws -> [String]
     func parse(for file: String, completion: @escaping(Result<[User], CSVError>) -> ())
+    func isBackslash(field: String) -> Bool
 }
 
 protocol UserConverter {

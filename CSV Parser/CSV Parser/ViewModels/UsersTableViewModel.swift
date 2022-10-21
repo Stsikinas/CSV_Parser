@@ -20,9 +20,12 @@ public class UsersTableViewModel {
     }
     // Internal
     internal let parsingThread = DispatchQueue(label: "parseUsers")
+    internal let fileImporter = FileImporter(fileExtension: "csv")
+    
+    // Rules
     internal let separator = ","
     internal let lineSeparator = "\n"
-    internal let fileImporter = FileImporter(fileExtension: "csv")
+    internal let carriageReturn = "\r"
     
     func getUsers(from file: String) {
         parse(for: file) { result in

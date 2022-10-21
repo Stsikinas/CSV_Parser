@@ -16,7 +16,7 @@ class MainViewController: UITableViewController {
     // Internal
     internal var files = [String]()
     internal var filePicker = UIPickerView()
-    internal let fileImporter: GetFilesProtocol = FileImporter(fileExtension: "csv")
+    internal let usersViewModel = UsersTableViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
